@@ -53,6 +53,9 @@ main { overflow: hidden; }
 .rsvp-form fieldset label { display: flex; min-height: 31px; align-items: center; gap: 9px; cursor: pointer; font-size: 15px; }
 .rsvp-form input[type="radio"] { accent-color: #a98143; }
 .rsvp-form button { display: block; width: 160px; height: 47px; margin: 18px auto 0; border: 0; color: #fff; background: #b79749; cursor: pointer; font: 700 17px Georgia, serif; }
+.rsvp-form button:disabled { cursor: wait; opacity: .68; }
+.form-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.form-error { margin: 14px 0 0; color: #9f2d2d; text-align: center; font: 600 14px/1.35 Georgia, serif; }
 .success-message { padding: 68px 0; text-align: center; }
 .success-message h2 { margin-bottom: 10px; }
 .closing-top { top: 168px; color: rgba(104,84,52,.62); font-size: 20px; font-weight: 500; line-height: 1.08; }
@@ -64,4 +67,3 @@ main { overflow: hidden; }
 @keyframes pulse { 50% { box-shadow: 0 0 34px rgba(43,134,197,.85); } }
 @media (max-width: 379px) { .section, .section-cover { min-height: 640px; } .scene { width: 100vw; flex-basis: 100vw; background-size: 100% 100%; } .music-button { right: 18px; bottom: 18px; width: 60px; height: 60px; font-size: 25px; } }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .scene.is-visible .reveal, .music-button { animation: none; } }
-
