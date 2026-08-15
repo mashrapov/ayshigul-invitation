@@ -42,9 +42,10 @@ document.querySelector('.rsvp-form').addEventListener('submit', async (event) =>
   error.hidden = true;
 
   try {
-    const response = await fetch('https://tilda-2020123-copy.mashrapov.chatgpt.site/api/rsvp', {
+    await fetch('https://script.google.com/macros/s/AKfycbzi7LpriUSqL2-rErUu2-fv_7yFjquyxd6fCGSnC24UEL-Rx3juUyu4ByoLAW0GPqjp5A/exec', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify({
         submissionId: crypto.randomUUID(),
         name: String(data.get('name') || '').trim(),
@@ -52,7 +53,6 @@ document.querySelector('.rsvp-form').addEventListener('submit', async (event) =>
         website: String(data.get('website') || ''),
       }),
     });
-    if (!response.ok) throw new Error('submit_failed');
     form.querySelector('.form-fields').hidden = true;
     form.querySelector('.success-message').hidden = false;
     form.reset();
