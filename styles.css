@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat+Alternates:wght@400;500&display=swap');
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; background: #fff; }
+body { color: #171717; font-family: "Cormorant Garamond", Georgia, serif; }
+main { overflow: hidden; }
+.section { display: flex; width: 100%; min-height: 640px; align-items: center; justify-content: center; background: #fff; }
+.section-cover { min-height: 100vh; }
+.section-gray { background: #f0f0f0; }
+.section-date { padding-block: 42px; }
+.section-last { padding-bottom: 24px; }
+.scene { position: relative; width: 360px; height: 640px; flex: 0 0 360px; overflow: hidden; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.scene-1 { background-image: url('https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation/scene1.png'); }
+.scene-2 { background-image: url('https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation/scene2.png'); }
+.scene-3 { background-image: url('https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation/scene3.png'); }
+.scene-4 { background-image: url('https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation/scene4.png'); }
+.scene-5 { background-image: url('https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation/scene5.png'); }
+.scene-6 { background-image: url('https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation/scene6.png'); }
+.reveal { opacity: 0; transform: translateY(12px); }
+.scene.is-visible .reveal { animation: reveal .9s ease-out forwards; }
+.scene.is-visible .delay { animation-delay: .38s; }
+@keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+.cover-content { position: absolute; inset: 100px 18px auto; color: #b18a48; text-align: center; }
+.floral-age { display: block; width: 205px; height: 205px; margin: 0 auto; object-fit: contain; }
+.cover-content h1 { margin: 13px 0 0; font-family: "Montserrat Alternates", Arial, sans-serif; font-size: 30px; font-weight: 400; letter-spacing: -.015em; line-height: 1.25; text-shadow: 1px 1px 0 #e8c98f; }
+.cover-content h1 span { display: block; }
+.intro-top, .intro-bottom, .message-top, .message-bottom, .closing-top, .closing-bottom { position: absolute; left: 24px; width: 312px; text-align: center; font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; }
+.intro-top { top: 78px; color: #151515; }
+.intro-top h2 { margin: 0 0 14px; color: #8d6d39; font-size: 30px; font-weight: 500; line-height: .92; }
+.intro-top p { margin: 0; font-size: 19px; font-weight: 500; line-height: 1.03; }
+.intro-bottom { top: 365px; font-size: 20px; font-weight: 500; line-height: 1.06; }
+.intro-bottom p { margin: 0; }
+.message-top { top: 132px; font-size: 21px; font-weight: 500; line-height: 1.06; }
+.message-bottom { top: 365px; font-size: 21px; font-weight: 500; line-height: 1.06; }
+.message-top p, .message-bottom p { margin: 0; }
+.date-content { position: absolute; inset: 75px 28px auto; text-align: center; }
+.date-content h2 { margin: 0; color: #a98143; font-family: "Cormorant Garamond", Georgia, serif; font-size: 47px; font-style: italic; font-weight: 500; line-height: 1; }
+.date-line { margin: 14px 0 23px; color: #a98143; font-family: "Montserrat Alternates", Arial, sans-serif; font-size: 17px; font-weight: 500; text-shadow: 1px 2px 2px rgba(65,45,22,.18); }
+.calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px 3px; font-family: Arial, sans-serif; font-size: 14px; }
+.calendar b { margin-bottom: 6px; font-size: 14px; font-weight: 500; }
+.calendar span { display: flex; height: 25px; align-items: center; justify-content: center; }
+.calendar .selected-day { border: 2px solid #c7a25a; border-radius: 50%; }
+.event-time { margin: 49px 0 0; color: #a98143; font-family: "Montserrat Alternates", Arial, sans-serif; font-size: 31px; font-weight: 500; text-shadow: 1px 2px 2px rgba(65,45,22,.22); }
+.address-content { position: absolute; inset: 200px 25px auto; color: #9d793f; text-align: center; font-family: "Montserrat Alternates", Arial, sans-serif; }
+.address-content h2 { margin: 0 0 58px; font-size: 31px; font-weight: 400; }
+.address-content p { margin: 0; font-size: 22px; line-height: 1.5; }
+.scene-form { display: flex; align-items: center; justify-content: center; }
+.rsvp-form { width: 286px; padding: 22px 18px 24px; color: #715a2e; background: rgba(255,255,255,.84); box-shadow: 0 8px 28px rgba(46,72,88,.12); }
+.rsvp-form h2 { margin: 0 0 21px; text-align: center; font-size: 27px; font-style: italic; font-weight: 500; }
+.rsvp-form > label, .rsvp-form legend, .form-fields > label { display: block; margin: 0 0 8px; font-family: Georgia, serif; font-size: 15px; font-weight: 700; }
+.rsvp-form input[type="text"] { width: 100%; height: 45px; margin-bottom: 19px; border: 1px solid rgba(157,121,63,.35); padding: 0 14px; color: #715a2e; background: #fff; font: 16px Georgia, serif; }
+.rsvp-form fieldset { margin: 0; border: 0; padding: 0; }
+.rsvp-form fieldset label { display: flex; min-height: 31px; align-items: center; gap: 9px; cursor: pointer; font-size: 15px; }
+.rsvp-form input[type="radio"] { accent-color: #a98143; }
+.rsvp-form button { display: block; width: 160px; height: 47px; margin: 18px auto 0; border: 0; color: #fff; background: #b79749; cursor: pointer; font: 700 17px Georgia, serif; }
+.rsvp-form button:disabled { cursor: wait; opacity: .68; }
+.form-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.form-error { margin: 14px 0 0; color: #9f2d2d; text-align: center; font: 600 14px/1.35 Georgia, serif; }
+.success-message { padding: 68px 0; text-align: center; }
+.success-message h2 { margin-bottom: 10px; }
+.closing-top { top: 168px; color: rgba(104,84,52,.62); font-size: 20px; font-weight: 500; line-height: 1.08; }
+.closing-bottom { top: 365px; color: rgba(104,84,52,.62); font-size: 21px; font-weight: 500; line-height: 1.09; }
+.closing-top p, .closing-bottom p { margin: 0; }
+.closing-bottom span { display: block; margin-top: 13px; }
+.music-button { position: fixed; right: 25px; bottom: 25px; z-index: 50; display: flex; width: 70px; height: 70px; align-items: center; justify-content: center; border: 0; border-radius: 50%; color: #fff; background: #2d2d2d; box-shadow: 0 0 20px rgba(255,60,172,.55), 0 0 35px rgba(43,134,197,.35); cursor: pointer; font-size: 29px; animation: pulse 2s infinite; }
+.music-button.is-playing { background: linear-gradient(135deg,#ff3cac,#784ba0,#2b86c5); }
+@keyframes pulse { 50% { box-shadow: 0 0 34px rgba(43,134,197,.85); } }
+@media (max-width: 379px) { .section, .section-cover { min-height: 640px; } .scene { width: 100vw; flex-basis: 100vw; background-size: 100% 100%; } .music-button { right: 18px; bottom: 18px; width: 60px; height: 60px; font-size: 25px; } }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .scene.is-visible .reveal, .music-button { animation: none; } }
