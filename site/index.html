@@ -80,14 +80,19 @@
         <form class="rsvp-form reveal">
           <div class="form-fields">
             <h2>Қатнишишиңизни тәстиқлаң</h2>
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
             <label for="guest-name">Исмиңиз</label>
-            <input id="guest-name" name="name" type="text" placeholder="Исим" required>
+            <input id="guest-name" name="name" type="text" placeholder="Исим" minlength="2" maxlength="80" required>
             <fieldset>
               <legend>Келәләмсиз?</legend>
               <label><input name="attendance" type="radio" value="yes" required><span>Һә, хошаллиқ билән келимән</span></label>
               <label><input name="attendance" type="radio" value="no"><span>Әпсус, келәлмәймән</span></label>
               <label><input name="attendance" type="radio" value="pair"><span>Жүпүм билән келимән</span></label>
             </fieldset>
+            <p class="form-error" role="alert" hidden>Җавап әвәтилмиди. Интернетни тәкшүрүп, қайта синап көрүң.</p>
             <button type="submit">Әвәтиш</button>
           </div>
           <div class="success-message" role="status" hidden>
@@ -113,4 +118,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
