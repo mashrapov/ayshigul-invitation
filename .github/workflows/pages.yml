@@ -26,13 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Download invitation artwork
-        run: |
-          mkdir -p site/assets
-          base="https://tilda-2020123-copy.mashrapov.chatgpt.site/invitation"
-          for file in floral-80.png scene1.png scene2.png scene3.png scene4.png scene5.png scene6.png; do
-            curl --fail --location --retry 3 "$base/$file" --output "site/assets/$file"
-          done
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
