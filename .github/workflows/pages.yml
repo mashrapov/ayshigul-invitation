@@ -1,5 +1,7 @@
 name: Deploy GitHub Pages
 
+# Triggered after enabling GitHub Actions as the Pages source
+
 on:
   push:
     branches: [main]
