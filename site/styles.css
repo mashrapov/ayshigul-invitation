@@ -10,12 +10,12 @@ main { overflow: hidden; }
 .section-date { padding-block: 42px; }
 .section-last { padding-bottom: 24px; }
 .scene { position: relative; width: 360px; height: 640px; flex: 0 0 360px; overflow: hidden; background-position: center; background-repeat: no-repeat; background-size: cover; }
-.scene-1 { background-image: url('assets/scene1.png'); }
-.scene-2 { background-image: url('assets/scene2.png'); }
-.scene-3 { background-image: url('assets/scene3.png'); }
-.scene-4 { background-image: url('assets/scene4.png'); }
-.scene-5 { background-image: url('assets/scene5.png'); }
-.scene-6 { background-image: url('assets/scene6.png'); }
+.scene-1 { background-image: url('assets/scene1.webp'); }
+.scene-2 { background-image: url('assets/scene2.webp'); }
+.scene-3 { background-image: url('assets/scene3.webp'); }
+.scene-4 { background-image: url('assets/scene4.webp'); }
+.scene-5 { background-image: url('assets/scene5.webp'); }
+.scene-6 { background-image: url('assets/scene6.webp'); }
 .reveal { opacity: 0; transform: translateY(12px); }
 .scene.is-visible .reveal { animation: reveal .9s ease-out forwards; }
 .scene.is-visible .delay { animation-delay: .38s; }
